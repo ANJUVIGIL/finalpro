@@ -66,14 +66,20 @@
 
 </head>
 <body>
+
+</nav>
 <div class="top-nav-bar">
 		<div class="search-box">
 			<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
 			<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
 
 			<a href="/"><img src="{% static '/img/logo.jpg' %}" class="logo" width="55px" height="50px"></a>
-			<input type="text" class="form-control" placeholder="Search">
-			<span class="input-group-text"><a href="/upload" style="color: #fff">Upload Precriptions</a></span>		
+			 <form method='get' action='/search' class="form-inline my-2 my-lg-0 ">
+      <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+      <button class="btn btn-outline-success  " type="submit">Search</button>
+				 <span class="input-group-text mx-2"><a href="/upload" style="color: #fff">Upload Precriptions</a></span>
+
+    </form>
 		</div>
 		<div class="menu-bar">
 			<ul>

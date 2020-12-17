@@ -33,4 +33,6 @@ urlpatterns = [
     path('customerservice/', views.customerservice, name='customerservice'),
     path('mailing/', views.email, name='email'),
     path('wallet/', views.wallet, name='wallet'),
+    path('search/', views.search, name='search'),
+
 ]
