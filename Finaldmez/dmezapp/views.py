@@ -156,7 +156,9 @@ def processOrder(request):
 	return JsonResponse('Payment submitted..', safe=False)
 
 
+def ayurvedhic(request):
 
+	return render(request,'ayurvedhic.html')
 
 
 
