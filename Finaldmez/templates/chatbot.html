@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
   max-width: 867px;
   margin: 25px 10px;
   height: calc(100% - 50px);
@@ -224,7 +224,6 @@ width:100%;}
           <input type="text" class="msger-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Query..." name="query">
         </div>
               <button type="submit" class="btn btn-warning mx-4">Send</button>
-          <a class="btn btn-warning mx-4" href="/" role="button">Go back to home</a>
 
 
 </div>
@@ -251,7 +250,13 @@ width:100%;}
 
       <h4 style="color: darkgray; padding-top: 2%;">Search Result for {{query}} :</h4>
       <h4 class='msg-text' style="padding-top: 2%;"><b>{{ans}}</b></h4>
+
             {% endif %}
+            <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Go back home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">MAB</li>
+  </ol>
+
     </div>
    </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

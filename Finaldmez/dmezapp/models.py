@@ -22,6 +22,9 @@ class Product(models.Model):
 	pub_date = models.DateField()
 	digital = models.NullBooleanField(default=False,null=True, blank=True)
 	image = models.ImageField(null=True, blank=True)
+	@staticmethod
+	def get_all_products(search):
+		return Product.objects.filter(desc=search)
 
 
 	def __str__(self):
