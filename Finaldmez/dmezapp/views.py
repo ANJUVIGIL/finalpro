@@ -36,6 +36,7 @@ def search(request):
 	params = {'allProds': allProds, "msg": ""}
 	if len(allProds) == 0 or len(search) < 4:
 		params = {'msg': "Please make sure to enter relevant search query"}
+		return render(request, 'notfound.html', params)
 	return render(request, 'search.html', params)
 
 

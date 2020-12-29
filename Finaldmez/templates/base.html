@@ -62,6 +62,37 @@
 		console.log('Cart:', cart)
 	
 	</script>
+	<style>
+		@media only screen and (max-width: 980px){
+	.top-nav-bar{
+		height: 118px;
+		border-bottom: 0;
+
+	}
+	.search-box{
+		width: 100%;
+	}
+	.menu-bar{
+		width: 100%;
+	}
+	.menu-bar ul{
+		margin: 10px 0;
+		width:100%;
+	}
+	.menu-bar ul li{
+		height:90px;
+		width: auto;
+		padding: 15px 52px;
+
+	}
+.slider {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 110px;
+}
+}
+	</style>
+
 
 
 </head>
@@ -74,10 +105,12 @@
 			<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
 
 			<a href="/"><img src="{% static '/img/logo.jpg' %}" class="logo" width="55px" height="50px"></a>
-			 <form method='get' action='/search' class="form-inline my-2 my-lg-0 ">
-      <input class="form-control mx-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
-      <button class="btn btn-outline-success  " type="submit">Search</button>
-				 <span class="input-group-text mx-2"><a href="/upload" style="color: #fff">Upload Precriptions</a></span>
+			<form method='get' action='/search' class="form-inline my-2 my-lg-0 ">
+
+      <input class="form-control my-2 mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+      <button class="btn btn-success my-2 mr-sm-2" type="submit" id="searchbtn">	      	<i class="fa fa-search"></i></button>
+				 <a class="btn btn-danger my-2 mr-sm-2 " href="/upload" style="color: #fff"><i class="fa fa-upload" aria-hidden="true"></i> Prescription</a>
+
 
     </form>
 		</div>
